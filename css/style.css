@@ -38,9 +38,9 @@ header {
     max-width: 1180px;
     margin: auto;
 
-    min-height: 82px;
+    min-height: 95px;
 
-    padding: 12px 24px;
+    padding: 14px 24px;
 
     display: flex;
     align-items: center;
