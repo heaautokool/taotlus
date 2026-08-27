@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hea Autokool – Autokool Tallinnas</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #171717;
+    background: #f5f5f5;
+    line-height: 1.6;
+}
+
+header {
+    background: #111;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,.25);
+}
+
+.header {
+    max-width: 1180px;
+    margin: auto;
+    padding: 12px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    width: 320px;
+    max-width: 65%;
+    height: auto;
+    display: block;
+}
+
+.phone {
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.phone:hover {
+    opacity: .75;
+}
+
+nav {
+    border-top: 1px solid #333;
+}
+
+.nav {
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 11px 19px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    background: #292929;
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background:
+        linear-gradient(rgba(0,0,0,.63),rgba(0,0,0,.63)),
+        linear-gradient(135deg,#333,#111);
+    color: white;
+    padding: 70px 22px;
+}
+
+.hero h1 {
+    font-size: clamp(40px,7vw,66px);
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: clamp(19px,3vw,25px);
+    margin: 0 0 32px;
+}
+
+.button {
+    display: inline-block;
+    background: white;
+    color: #111;
+    text-decoration: none;
+    padding: 13px 27px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #ddd;
+}
+
+section {
+    max-width: 1120px;
+    margin: auto;
+    padding: 70px 22px;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin: 0 0 38px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 22px;
+}
+
+.course {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 3px 16px rgba(0,0,0,.08);
+}
+
+.category {
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.course h3 {
+    margin: 4px 0 8px;
+    font-size: 23px;
+}
+
+.course a {
+    color: #111;
+    font-weight: bold;
+}
+
+.prices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: 20px;
+}
+
+.price {
+    background: white;
+    padding: 27px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 16px rgba(0,0,0,.08);
+}
+
+.price h3 {
+    margin-top: 0;
+}
+
+.price-value {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.info {
+    max-width: 800px;
+    margin: auto;
+}
+
+.box {
+    background: white;
+    padding: 30px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 16px rgba(0,0,0,.08);
+}
+
+.box h3 {
+    margin-top: 0;
+    font-size: 25px;
+}
+
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+@media(max-width:650px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 300px;
+        max-width: 90%;
+    }
+
+    .phone {
+        font-size: 18px;
+    }
+
+    .nav a {
+        padding: 9px 11px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 430px;
+    }
+
+    section {
+        padding: 50px 18px;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- ШАПКА -->
+
+<header>
+
+    <div class="header">
+
+        <img
+            class="logo"
+            src="https://heaautokool.ee/wp-content/uploads/2024/04/logo-768x85.jpeg"
+            alt="Hea Autokool"
+        >
+
+        <a
+            class="phone"
+            href="tel:+37255967236"
+        >
+            +372 55967236
+        </a>
+
+    </div>
+
+
+    <nav>
+
+        <div class="nav">
+
+            <a href="#avaleht">Avaleht</a>
+
+            <a href="#kursused">Kursused</a>
+
+            <a href="#hinnad">Hinnad</a>
+
+            <a href="#meist">Meist</a>
+
+            <a href="#kontakt">Kontakt</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ГЛАВНАЯ -->
+
+<section id="avaleht" class="hero">
+
+    <div>
+
+        <h1>Hea Autokool</h1>
+
+        <p>
+            Mootorsõidukijuhi koolitus Tallinnas
+        </p>
+
+        <a
+            class="button"
+            href="#kursused"
+        >
+            Vaata kursusi
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- КУРСЫ -->
+
+<section id="kursused">
+
+    <h2>Kursused</h2>
+
+
+    <div class="courses">
+
+
+        <div class="course">
+
+            <div class="category">B</div>
+
+            <h3>B-kategooria</h3>
+
+            <p>
+                Sõiduauto juhtimisõppe kursus.
+            </p>
+
+            <a href="programmid/B.pdf">
+                Õppekava →
+            </a>
+
+        </div>
+
+
+
+        <div class="course">
+
+            <div class="category">BE</div>
+
+            <h3>BE-kategooria</h3>
+
+            <p>
+                Sõiduauto ja haagise juhtimisõppe kursus.
+            </p>
+
+            <a href="programmid/BE.pdf">
+                Õppekava →
+            </a>
+
+        </div>
+
+
+
+        <div class="course">
+
+            <div class="category">A</div>
+
+            <h3>A-kategooria</h3>
+
+            <p>
+                Mootorratta juhtimisõppe kursus.
+            </p>
+
+            <a href="programmid/A.pdf">
+                Õppekava →
+            </a>
+
+        </div>
+
+
+
+        <div class="course">
+
+            <div class="category">A1</div>
+
+            <h3>A1-kategooria</h3>
+
+            <p>
+                A1-kategooria mootorratta juhtimisõppe kursus.
+            </p>
+
+            <a href="programmid/A1.pdf">
+                Õppekava →
+            </a>
+
+        </div>
+
+
+
+        <div class="course">
+
+            <div class="category">A2</div>
+
+            <h3>A2-kategooria</h3>
+
+            <p>
+                A2-kategooria mootorratta juhtimisõppe kursus.
+            </p>
+
+            <a href="programmid/A2.pdf">
+                Õppekava →
+            </a>
+
+        </div>
+
+
+
+        <div class="course">
+
+            <div class="category">AM</div>
+
+            <h3>AM-kategooria</h3>
+
+            <p>
+                Mopeedijuhi juhtimisõppe kursus.
+            </p>
+
+            <a href="programmid/AM.pdf">
+                Õppekava →
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ЦЕНЫ -->
+
+<section id="hinnad">
+
+    <h2>Hinnad</h2>
+
+
+    <div class="prices">
+
+
+        <div class="price">
+
+            <h3>B-kategooria</h3>
+
+            <div class="price-value">
+                [HIND]
+            </div>
+
+            <p>EUR</p>
+
+        </div>
+
+
+
+        <div class="price">
+
+            <h3>BE-kategooria</h3>
+
+            <div class="price-value">
+                [HIND]
+            </div>
+
+            <p>EUR</p>
+
+        </div>
+
+
+
+        <div class="price">
+
+            <h3>A-kategooria</h3>
+
+            <div class="price-value">
+                [HIND]
+            </div>
+
+            <p>EUR</p>
+
+        </div>
+
+
+
+        <div class="price">
+
+            <h3>A1-kategooria</h3>
+
+            <div class="price-value">
+                [HIND]
+            </div>
+
+            <p>EUR</p>
+
+        </div>
+
+
+
+        <div class="price">
+
+            <h3>A2-kategooria</h3>
+
+            <div class="price-value">
+                [HIND]
+            </div>
+
+            <p>EUR</p>
+
+        </div>
+
+
+
+        <div class="price">
+
+            <h3>AM-kategooria</h3>
+
+            <div class="price-value">
+                [HIND]
+            </div>
+
+            <p>EUR</p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- О НАС -->
+
+<section id="meist">
+
+    <h2>Meist</h2>
+
+
+    <div class="info">
+
+
+        <div class="box">
+
+            <h3>Hea Autokool OÜ</h3>
+
+            <p>
+                <strong>Registrikood:</strong>
+                16530208
+            </p>
+
+            <p>
+                <strong>Tegevusloa number:</strong>
+                [LISA NUMBER]
+            </p>
+
+            <p>
+                <strong>Telefon:</strong>
+                +372 55967236
+            </p>
+
+            <p>
+                <strong>E-post:</strong>
+                heaautokool.ee@gmail.com
+            </p>
+
+            <p>
+                <strong>Aadress:</strong>
+                Suur-Karja 12, Tallinn
+            </p>
+
+        </div>
+
+
+
+        <div class="box">
+
+            <h3>Õpetaja</h3>
+
+            <p>
+                <strong>Aleksandr Tšernuhha</strong>
+            </p>
+
+            <p>
+                <strong>Õpetatavad kategooriad:</strong>
+                B, BE, A, A1, A2, AM
+            </p>
+
+            <p>
+                <strong>Õpetaja tunnistuse / loa number:</strong>
+                [LISA NUMBER]
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- КОНТАКТ -->
+
+<section id="kontakt">
+
+    <h2>Kontakt</h2>
+
+
+    <div class="info">
+
+        <div class="box">
+
+            <h3>Hea Autokool OÜ</h3>
+
+            <p>
+                <strong>Telefon:</strong>
+                <a href="tel:+37255967236">
+                    +372 55967236
+                </a>
+            </p>
+
+            <p>
+                <strong>E-post:</strong>
+                <a href="mailto:heaautokool.ee@gmail.com">
+                    heaautokool.ee@gmail.com
+                </a>
+            </p>
+
+            <p>
+                <strong>Aadress:</strong>
+                Suur-Karja 12, Tallinn
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    © 2026 Hea Autokool OÜ
+
+</footer>
+
+
+</body>
+</html>
