@@ -50,11 +50,9 @@ header {
 }
 
 .logo {
-    width: 330px;
+    width: 360px;
     max-width: 65%;
-
     height: auto;
-
     display: block;
 }
 
@@ -63,7 +61,7 @@ header {
 
     text-decoration: none;
 
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 800;
 
     white-space: nowrap;
